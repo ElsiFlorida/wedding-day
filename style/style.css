@@ -3,3 +3,19 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.adwidth{
+    width: 500px;
+}
+.adcontent{
+    border: 2px solid #ea7b7f;
+}
+.adcentrer{
+    text-align: center;
+    margin-top: 10px;
+    color: #ea7b7f;
+}
+.adconect{
+    background-color: #49bad2;
+    font-size: 30px;
+}
