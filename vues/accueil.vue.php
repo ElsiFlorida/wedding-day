@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8">
-        <title>WEDDING-DAY</title>
-        <?php include('stylesheet.php')?>
-    </head>
+        <?php include('../header.php')?>
     <body class="h-100">
-     <div class="contenue container h-100">
+     <div class="contenue container-fluid pl-0 pr-0 h-100">
         <section class=" entete row bg-danger">
-            ddddd
+            
         </section>
-        <section class=" h-100 d-flex flex-column justify-content-center">
-            <div class="d-flex justify-content-center">
-                <a class="btn btn-info w-25">Voir nos Evenements</a>
+        <section class=" d-flex flex-column justify-content-center trans">
+            <h1 class="text-1 mt-5 text-light">WEDDING DAY</h1>
+            <p class="text-2 mt-5">Votre agence d'organistion de mariages luxueux avec plus 10000 mariages organises</p>
+            <div class="d-flex justify-content-center mt-5">
+                <a class="btn btn-info w-25 text-light">Voir nos Evenements</a>
             </div>
         </section>
      </div>
