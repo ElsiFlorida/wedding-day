@@ -1,0 +1,38 @@
+.contenue{
+    background-image: url('../images/wedding.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.adwidth{
+    width: 500px;
+}
+.adcontent{
+    border: 2px solid #ea7b7f;
+}
+.adcentrer{
+    text-align: center;
+    margin-top: 10px;
+    color: #ea7b7f;
+}
+.adconect{
+    background-color: #49bad2;
+    font-size: 30px;
+}
+.listbg{
+    background-color: #ea7b7f;
+    height: 3em;
+}
+.listimg{
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+.listcontent{
+    box-shadow: 1px 3px 5px 1px gray;
+    width: 310px;
+    height: 400px;
+    margin-top: 5em;
+    margin-left: 2em;
+}
