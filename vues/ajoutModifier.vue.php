@@ -19,7 +19,7 @@ include('../header.php');
 </div>
  
 <div class="form">
-<div>
+<div class="date">
     <h5>Date de début:</h5><input type="date"name="nom"/>
 </div>
 <div>
