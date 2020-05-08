@@ -10,7 +10,7 @@
             <h1 class="text-1 mt-5 text-light">WEDDING DAY</h1>
             <p class="text-2 mt-5">Votre agence d'organistion de mariages luxueux avec plus 10000 mariages organises</p>
             <div class="d-flex justify-content-center mt-5">
-                <a class="btn btn-info w-25 text-light">Voir nos Evenements</a>
+                <a href="index.php?page=liste" class="btn btn-info w-25 text-light">Voir nos Evenements</a>
             </div>
         </section>
      </div>

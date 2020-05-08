@@ -1,5 +1,4 @@
 <?php
- require('modeles/Db.model.php');
 include_once('modeles/admin.modele.php');
 class user{
     private $admin;

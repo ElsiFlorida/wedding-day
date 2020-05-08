@@ -1,5 +1,5 @@
 <?php
-include_once('controleurs/single.controller.php');
-$single=new single();
-$single->start();
+include_once('controleurs/router.controller.php');
+$router=new Router();
+$router->request();
 ?>

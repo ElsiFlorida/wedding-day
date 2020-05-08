@@ -1,5 +1,4 @@
 <?php
- require('modeles/Db.model.php');
 include_once('modeles/commentaire.model.php');
 include_once('modeles/evenement.model.php');
 class single{
@@ -13,13 +12,11 @@ class single{
     }
 
     function start(){
-        $_GET['id']='1';
         if(isset($_GET['id'])){
             
             $evenement=$this->evenement->detail($_GET['id']);
             $commentaire=$this->commentaire->getAll($evenement['id']);
             if(isset($_POST['nom']) AND isset($_POST['numero']) AND isset($_POST['contenu'])) {
-                //print_r($_POST);
                 $this->commentaire->register($evenement['id'],$_POST['nom'],$_POST['numero'],$_POST['contenu']);
             }
         }
