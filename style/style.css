@@ -1,7 +1,9 @@
+/*vue accueil*/
 .contenue{
-    background-image: url('../images/wedding.jpg');
+    background-image: url('../image/wedding.jpg');
     background-repeat: no-repeat;
     background-position: center;
+<<<<<<< HEAD
 }
 /* listeAdmin.vue */
 td{
@@ -60,3 +62,39 @@ table{
     height: 200px;
     border: 1px solid black;
 }
+=======
+    background-size: cover;
+}
+.trans{
+  background-color:rgba(0, 0, 0, 0.3);
+  min-height: 100%;
+
+}
+
+.entete{
+    height: 5%;
+}
+
+.text-2,.text-1{
+    text-align: center;
+}
+
+
+.text-2{
+    font-weight: bold;
+}
+/*vue single*/
+.ev-image{
+    height: 400px;
+}
+.comment-title{
+    border-bottom: 3px solid red;
+}
+.comment-block{
+  border-left: 3px solid #49bad2;
+  border-right: 3px solid #49bad2;
+}
+.comment{
+    border-bottom: 3px solid #49bad2;
+}
+>>>>>>> origin/Evariste

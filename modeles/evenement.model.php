@@ -1,5 +1,4 @@
 <?php
-include('Db.model.php');
 class evenement{
     private $id="";
     private $nom="";
@@ -8,7 +7,7 @@ class evenement{
     private $dateDebut="";
     private $dateFin="";
 
-    function __construct(){
+    function __construct($db){
         $this->base=$db;
    
     function enregistrer($nom,$photo,$description,$dateDebut,$dateFin) 

@@ -17,12 +17,35 @@ include('../header.php');
 <td>Date fin</td>
 <td>Option</td>
 </tr>
+<?php
+foreach ($event as $key) {
+    ?>
+
 <tr class="ligne">
-<td></td>
-<td></td>
-<td></td>
-<td>Supprimer Modifier</td>
+<td>
+<?php
+echo $key['nom'];
+?>
+</td>
+<td>
+<?php
+echo $key['dateDebut'];
+?>
+</td>
+<td>
+<?php
+echo $key['dateFin'];
+?>
+</td>
+<td><a href="<?php echo $key['id'];
+?>">Supprimer</a>
+<a href="<?php echo $key['id'];
+?>">Modifier</a>
+</td>
 </tr>
+<?php
+}
+?>
 </table>
 </body>
 </html>
