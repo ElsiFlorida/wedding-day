@@ -1,23 +1,30 @@
 <?php
-include_once('../modeles/admin.modele.php');
-class single{
+ require('modeles/Db.model.php');
+include_once('modeles/admin.modele.php');
+class user{
     private $admin;
     private $evenement;
 
     function __construct(){
-        $admin=new admin();
+        $base=new Db();
+        $db=$base->connect();
+        $this->admin=new admin($db);
     }
 
     function start(){
-            $list=$this->admin->adminListe();
+            $liste=$this->admin->liste();
             if(isset($_POST['username'])) {
-                $this->admin->enregistrer($_POST['username'],'admin');
+                $this->admin->creer($_POST['username'],'admin');
             }
 
-            if(isset($_POST['newpass']) AND isset($_POST['oldpass'])) {
-                $this->admin->change($_POST['newpass'],$_POST['oldpass']);
+            if(isset($_GET['suppr'])) {
+                $this->admin->suppr($_GET['suppr']);
             }
-            require('../vues/user.vue.php');
+
+            if(isset($_POST['new_pass']) AND isset($_POST['old_pass'])) {
+                $this->admin->change($_POST['new_pass'],$_POST['old_pass']);
+            }
+            require('vues/user.vue.php');
     }
 }
 ?>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php include('../header.php')?>
+<?php include('header.php')?>
     <body>
     <div class="container-fluid">
         <header class="row p-2" style="background-color:#ea7b7f">
@@ -12,17 +12,17 @@
         </section>
 
         <ul class="row flex-column">
-            <li>Nom de l'evenement<?php //$evenement['nom'];?></li>
-            <li>Date debut<?php //$evenement['debut'];?></li>
-            <li>Date fin<?php //$evenement['fin'];?></li>
+            <li><?php echo $evenement['nom'];?></li>
+            <li><?php echo $evenement['dateDebut'];?></li>
+            <li><?php echo $evenement['dateFin'];?></li>
         </ul>
         <h2 class="comment-title">Laisser un commentaire</h2>
-        <form class="form row">
+        <form action="" method="post" class="form row">
 
           <div class="col-md-4">
-             <input type="text" placeholder="Nom" class="form-control mt-3">
-             <input type="text" placeholder="Prenom" class="form-control mt-3">
-             <textarea class="form-control mt-3" placeholder="Message"></textarea>
+             <input type="text" placeholder="Nom" name="nom" class="form-control mt-3">
+             <input type="text" placeholder="Telephone" name="numero" class="form-control mt-3">
+             <textarea class="form-control mt-3" name="contenu" placeholder="Message"></textarea>
 
              <input type="submit" class="form-control mt-3 w-25 btn btn-info">
           </div>
@@ -32,14 +32,14 @@
         <section>
         <h2 class="comment">Commentaires</h2>
             <?php
-            //foreach ($commentaire as $comment) {
+            foreach ($commentaire as $comment) {
                 ?>
                 <div class="comment-block p-2 mt-3">
-                    <h5>Le <?php //echo $comment['dt'] ?> par <?php //echo $comment['nom'].' '.$comment['prenom']; ?></h5>
-                    <p>ddddddddddddddcccccccccccc<br>dghdhgdhbfvhjbvfjbhgvjhvgjhbgvjhbvfghjbfvhj<?php //echo  $comment['contenue'] ?></p>
+                    <h6><b>Le <?php echo $comment['datePub'] ?> par <?php echo $comment['nom']; ?></b></h6>
+                    <p><?php echo  $comment['contenu'] ?></p>
                 <div>
             <?php
-            //}
+            }
             ?>
         </section>
     </div>

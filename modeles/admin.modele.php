@@ -1,9 +1,7 @@
 <?php
-include_once("Db.model.php");
-
 class Admin{
     private $base;
-   function __construct(){
+   function __construct($db){
     $this->base=$db;
 }
 function isAdmin($username,$Password){
@@ -19,7 +17,9 @@ function isAdmin($username,$Password){
     }
     else{ 
         return false;
+    }
 }
+
 function modifPass($newpass,$id){
     $modif=$this->base->prepare("UPDATE administrateur SET mot_de_passe=:newpass WHERE identifiant=:id");
     $modif->execute(array(
@@ -27,17 +27,28 @@ function modifPass($newpass,$id){
         "id"=>$id
     ));
 }
+
 function creer($username,$Password){
     $inserer=$this->base->prepare("INSERT INTO administrateur(username,password) VALUES(:usernameN,:passwordN)");
     $inserer->execute(array(
         "usernameN"=>$username,
         "passwordN"=>sha1($Password)
     ));
+}
+
     function supprimer($id){
         $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
     $supri->execute(array(
         "id"=>$id
     ));
     }
+
+    function liste(){
+     $ls=$this->base->query("SELECT * FROM administrateur");
+    return $ls->fetchAll();
+    }
+
+
 }
+
 ?>

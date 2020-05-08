@@ -1,5 +1,5 @@
 <?php
-include_once('controleurs/single.controller.php');
-$single=new single();
+include_once('controleurs/user.controller.php');
+$single=new user();
 $single->start();
 ?>
