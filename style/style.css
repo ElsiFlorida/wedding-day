@@ -3,11 +3,6 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-<<<<<<< HEAD
-
-.adwidth{
-    width: 500px;
-=======
 /* listeAdmin.vue */
 td{
     border: 1px solid black;
@@ -41,7 +36,6 @@ table{
 }
 .date{
     margin-right: 50px;
->>>>>>> origin/souka
 }
 .adcontent{
     border: 2px solid #ea7b7f;
@@ -55,16 +49,10 @@ table{
     background-color: #49bad2;
     font-size: 30px;
 }
-<<<<<<< HEAD
-.listbg{
-    background-color: #ea7b7f;
-    height: 3em;
-=======
 .image{
     width: 450px;
     height: 200px;
     border: 1px solid black;
->>>>>>> origin/souka
 }
 .listimg{
     background-color: gray;
