@@ -29,7 +29,7 @@
                        ?>
                        <tr class="">
                            <td class=""><?php echo $key['username'] ?></td>
-                           <td class=""><a href="?suppr=<?php echo $key['id'] ?>">X</a></td>
+                           <td class=""><a href="index.php?page=user&suppr=<?php echo $key['id'] ?>">X</a></td>
                        </tr>
 
                        <?php
