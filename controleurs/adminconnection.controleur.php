@@ -1,5 +1,5 @@
 <?php
-class Adminconnect{
+class Adminconnection{
    
     function __construct(){
         $base=new Db();
