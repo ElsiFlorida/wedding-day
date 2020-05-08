@@ -1,9 +1,9 @@
 <?php
-include_once("Db.model.php");
+
 
 class Admin{
     private $base;
-   function __construct(){
+   function __construct($db){
     $this->base=$db;
 }
 function isAdmin($username,$Password){
