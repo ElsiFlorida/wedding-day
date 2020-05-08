@@ -1,24 +1,26 @@
 <?php
-  include_once('Db.model.php');
 
   class commentaire{
       
-      function __construct(){}
+    private $base;
+    function __construct($db){
+        $this->base=$db;
+    }
 
       function getAll($id){
-          $select=$db->prepare('SELECT * FROM wedding WHERE eve_id=:id');
+          $select= $this->base->prepare('SELECT * FROM commentaire WHERE eve_id=:id');
           $select->execute(array("id"=>$id));
           $commentaire=$select->fetchAll();
           return $commentaire;
       }
 
-      function enregistrer($id,$nom,$prenom,$contenu){
-        $inser=$db->prepare('INSERT INTO wedding(nom,prenom,message) VALUE(:nom,:prenom,:prenom) WHERE id=:id');
+      function register($id,$nom,$prenom,$contenu){
+        $inser= $this->base->prepare('INSERT INTO commentaire(eve_id,nom,numero,contenu) VALUES(:eve_id, :nom, :numero, :contenu');
         $inser->execute(array(
+          'eve_id'=>$id,
           'nom'=>$nom,
-          'prenom'=>$prenom,
-          'message'=>$contenu,
-          'id'=>$id
+          'numero'=>$prenom,
+          'contenu'=>$contenu
         ));
       }
   }
