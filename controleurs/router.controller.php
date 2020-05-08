@@ -1,5 +1,6 @@
 <?php
 require('modeles/Db.model.php');
+require('modeles/Db.model.php');
 function loadcontroller($class){
     require_once($class.'.controller.php');
 }
@@ -14,11 +15,11 @@ class Router{
 
      function __construct(){
         $this->single=new single();
-        $this->liste=new Liste();
-        $this->connexion=new Adminconnect();
+        $this->liste=new liste();
+        //$this->connexion=new login();
         $this->user=new user();
-        $this->ajoutmod=new ajoutmod();
-        $this->listAdmin=new listeAdmin();
+        //$this->ajoutmod=new ajoutmod();
+        //$this->listAdmin=new listeAdmin();
      }
 
      function request(){

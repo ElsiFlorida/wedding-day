@@ -9,7 +9,7 @@ class evenement{
 
     function __construct($db){
         $this->base=$db;
-   
+    }
     function enregistrer($nom,$photo,$description,$dateDebut,$dateFin) 
     {
     $event =$this->base-> prepare('INSERT INTO evenement
@@ -64,6 +64,5 @@ $event->execute(array(
 ));
 return $event->fetch();
 }
-
+}
 ?>
-

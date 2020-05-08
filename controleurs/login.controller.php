@@ -1,5 +1,5 @@
 <?php
-class Adminconnect{
+class login{
    
     function __construct(){
         $base=new Db();
@@ -19,9 +19,8 @@ class Adminconnect{
             }
 
         }
-
+        include("vues.adminConnection.vue.php");
     }
-    include("vues.adminConnection.vue.php")
 }
 
 ?>

@@ -19,6 +19,7 @@ function isAdmin($username,$Password){
     }
     else{ 
         return false;
+    }
 }
 function modifPass($newpass,$id){
     $modif=$this->base->prepare("UPDATE administrateur SET mot_de_passe=:newpass WHERE identifiant=:id");
@@ -39,5 +40,6 @@ function creer($username,$Password){
         "id"=>$id
     ));
     }
+}
 }
 ?>

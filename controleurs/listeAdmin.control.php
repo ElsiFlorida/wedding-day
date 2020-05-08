@@ -1,6 +1,7 @@
 <?php
 include_once("model/evenement.model.php")
-class listeAdmin{
+class listeAdmin
+{
    private $evenement;
 
 function__construct() {

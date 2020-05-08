@@ -1,5 +1,6 @@
 <?php
-class Liste{
+include_once('modeles/evenement.model.php');
+class liste{
     private $evenement;
 
     function __construct(){
@@ -11,9 +12,9 @@ class Liste{
         if(isset($_GET['lister'])){
 
             $evenement=$this->evenement->lister($_GET['lister']);
-
+            //hh
+        include("vues/liste.vue.php");
         }
     }
-include("vues/liste.vue.php");
 }
 ?>
