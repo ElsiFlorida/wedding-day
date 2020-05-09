@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-include('../header.php');
+include('header.php');
 ?>
 <body>
 <table>

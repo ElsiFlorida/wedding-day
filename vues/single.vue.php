@@ -4,9 +4,9 @@
     <body>
     <div class="container-fluid">
         <header class="row p-2" style="background-color:#ea7b7f">
-            <a class="btn btn-info col-md-1">Accueil</a>
+            <a class="btn btn-info col-md-1" href="index.php">Accueil</a>
         </header>
-        <a href="index.php?page=liste" class="btn m-2" style="border:1px solid black"><span class="fa fa-arrow-left mr-3"></span>Retour a la liste</a>
+        <a href="index.php?page=liste&lister=liste" class="btn m-2" style="border:1px solid black"><span class="fa fa-arrow-left mr-3"></span>Retour a la liste</a>
         <section class=" ev-image row bg-success">
             
         </section>

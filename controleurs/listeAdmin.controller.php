@@ -12,8 +12,8 @@ $this->evenement= new evenement($db);
 function start(){
     if(isset($_GET['liste'])){
         $event=$this->evenement->lister();
+        include('vues/listeAdmin.vue.php');
     }
-    include('vues/listeAdmin.vue.php');
 }
 }
 ?>

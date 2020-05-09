@@ -4,8 +4,8 @@
 include("header.php");
 ?>
 <body>
-<div class="listbg">
-      <a class=" bg-info text-light ml-5" href="#">Accueil</a>
+<div class="listbg bg-danger">
+      <a class=" btn btn-info text-light ml-5" href="index.php?page=accueil">Accueil</a>
   </div>
   <div class="row">
 <?php
