@@ -41,5 +41,11 @@ function creer($username,$Password){
     ));
     }
 }
+
+function liste(){
+    $ls=$this->base->query("SELECT * FROM administrateur");
+   return $ls->fetchAll();
+   }
+   
 }
 ?>
