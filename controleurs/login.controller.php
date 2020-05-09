@@ -12,7 +12,7 @@ class login{
             if ($admi!=false){
     session_start();
     $_SESSION["id"]=$admi["id"];
-                header("location:index.php?page=ajoutModifier");
+                header("location:index.php?page=user");
             }
             else{
                 header("location:index.php?page=connexion");
