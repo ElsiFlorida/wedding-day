@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="h-100">
-        <?php include('../header.php')?>
+        <?php include('header.php')?>
     <body class="h-100">
      <div class="contenue container-fluid pl-0 pr-0 h-100">
         <section class=" entete row bg-danger">

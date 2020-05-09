@@ -1,48 +1,16 @@
-/*vue accueil*/
 .contenue{
     background-image: url('../image/wedding.jpg');
     background-repeat: no-repeat;
     background-position: center;
-<<<<<<< HEAD
 }
-<<<<<<< HEAD
-
-.adwidth{
-    width: 500px;
-}
-.adcontent{
-    border: 2px solid #ea7b7f;
-}
-.adcentrer{
+.text-1,.text-2{
     text-align: center;
-    margin-top: 10px;
-    color: #ea7b7f;
 }
-.adconect{
-    background-color: #49bad2;
-    font-size: 30px;
-}
-.listbg{
-    background-color: #ea7b7f;
-    height: 3em;
-}
-.listimg{
-    background-color: gray;
-    width: 300px;
-    height: 300px;
-    margin: 5px;
-}
-.listcontent{
-    box-shadow: 1px 3px 5px 1px gray;
-    width: 310px;
-    height: 400px;
-    margin-top: 5em;
-    margin-left: 2em;
-=======
 /* listeAdmin.vue */
 td{
     border: 1px solid black;
 }
+
 table{
     width: 100%;
     border-collapse: separate ;
@@ -73,68 +41,33 @@ table{
 .date{
     margin-right: 50px;
 }
-.form1{
-    width: 100%;
-    height: 100%;
+.adcontent{
+    border: 2px solid #ea7b7f;
+}
+.adcentrer{
+    text-align: center;
     margin-top: 10px;
-    
+    color: #ea7b7f;
 }
-#commentaire{
-    width: 300px;
-    height: 200px;
-    margin-top: 50px;
-}
-#envoi{
-    background-color: rgb(95, 173, 192);
-    color: white;
-}
-.envoi{
-    margin-top: 20px;
+.adconect{
+    background-color: #49bad2;
+    font-size: 30px;
 }
 .image{
     width: 450px;
     height: 200px;
     border: 1px solid black;
 }
->>>>>>> origin/souka
-=======
-    background-size: cover;
+.listimg{
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
 }
-.trans{
-  background-color:rgba(0, 0, 0, 0.3);
-  min-height: 100%;
-
-}
-
-.entete{
-    height: 5%;
-}
-
-.text-2,.text-1{
-    text-align: center;
-}
-
-
-.text-2{
-    font-weight: bold;
-}
-/*vue single*/
-.ev-image{
+.listcontent{
+    box-shadow: 1px 3px 5px 1px gray;
+    width: 310px;
     height: 400px;
+    margin-top: 5em;
+    margin-left: 2em;
 }
-.comment-title{
-    border-bottom: 3px solid red;
-}
-.comment-block{
-  border-left: 3px solid #49bad2;
-  border-right: 3px solid #49bad2;
-}
-.comment{
-    border-bottom: 3px solid #49bad2;
-<<<<<<< HEAD
->>>>>>> origin/Evariste
-}
-=======
-}
->>>>>>> origin/Evariste
->>>>>>> origin/souka

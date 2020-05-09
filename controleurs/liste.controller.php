@@ -1,5 +1,5 @@
 <?php
-include_once('modeles/evenement.model.php');
+//include_once('modeles/evenement.model.php');
 class liste{
     private $evenement;
 
@@ -11,7 +11,8 @@ class liste{
     function start(){
         if(isset($_GET['lister'])){
 
-            $evenement=$this->evenement->lister($_GET['lister']);
+            $evenement=$this->evenement->lister();
+
             //hh
         include("vues/liste.vue.php");
         }
