@@ -1,24 +1,13 @@
-<<<<<<< HEAD
-=======
 .contenue{
     background-image: url('../image/wedding.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
 /*vue accueil*/
->>>>>>> origin/test
 .contenue{
-    background-image: url('../images/wedding.jpg');
+    background-image: url('../image/wedding.jpg');
     background-repeat: no-repeat;
     background-position: center;
-<<<<<<< HEAD
-}
-<<<<<<< HEAD
-
-.adwidth{
-    width: 500px;
-=======
-=======
     background-size: cover;
 }
 .trans{
@@ -87,7 +76,6 @@ a:hover{
     width: 100%;
     height: inherit;
 }
->>>>>>> origin/test
 /* listeAdmin.vue */
 td{
     border: 1px solid black;
@@ -122,7 +110,6 @@ table{
 }
 .date{
     margin-right: 50px;
->>>>>>> origin/souka
 }
 .adcontent{
     border: 2px solid #ea7b7f;
@@ -136,31 +123,19 @@ table{
     background-color: #49bad2;
     font-size: 30px;
 }
-<<<<<<< HEAD
-.listbg{
-    background-color: #ea7b7f;
-    height: 3em;
-=======
 .image{
     width: 450px;
     height: 200px;
     border: 1px solid black;
->>>>>>> origin/souka
 }
 .listimg{
     background-color: gray;
-<<<<<<< HEAD
-    width: 300px;
-    height: 300px;
-    margin: 5px;
-=======
     width: 100%;
     height: 250px;
     
 }
 .listbg{
     background-color: #ea7b7f;
->>>>>>> origin/test
 }
 .listcontent{
     box-shadow: 1px 3px 5px 1px gray;
@@ -168,8 +143,4 @@ table{
     height: 400px;
     margin-top: 5em;
     margin-left: 2em;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/test
