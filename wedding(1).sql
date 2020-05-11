@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 07, 2020 at 04:08 PM
+-- Generation Time: May 11, 2020 at 03:22 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -34,6 +34,13 @@ CREATE TABLE `administrateur` (
   `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `administrateur`
+--
+
+INSERT INTO `administrateur` (`id`, `username`, `password`) VALUES
+(5, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');
+
 -- --------------------------------------------------------
 
 --
@@ -46,8 +53,7 @@ CREATE TABLE `commentaire` (
   `nom` varchar(255) DEFAULT NULL,
   `numero` varchar(255) DEFAULT NULL,
   `contenu` varchar(255) DEFAULT NULL,
-  `datePub` datetime DEFAULT NULL,
-  `photo` varchar(225) DEFAULT NULL
+  `datePub` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -59,9 +65,21 @@ CREATE TABLE `commentaire` (
 CREATE TABLE `evenement` (
   `id` int(11) NOT NULL,
   `nom` varchar(255) DEFAULT NULL,
-  `dateDebut` varchar(255) DEFAULT NULL,
-  `dateFin` varchar(255) DEFAULT NULL
+  `photo` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `dateDebut` date DEFAULT NULL,
+  `dateFin` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `evenement`
+--
+
+INSERT INTO `evenement` (`id`, `nom`, `photo`, `description`, `dateDebut`, `dateFin`) VALUES
+(4, 'parisienne', 'imageEvent/parisienneimage.jpg', 'mariage sur les allÃ©e des champs Ã©lysÃ©\r\n', '2020-05-06', '2020-05-12'),
+(5, 'anglais', 'imageEvent/anglaisimage.jpg', '\r\nmariage du prince charle', '2020-05-27', '2020-05-26'),
+(6, 'portugal', 'imageEvent/portugalimage.jpg', '\r\nmariage du ministre de la sante', '2020-05-30', '2020-05-30'),
+(8, 'burkina', 'imageEvent/burkinaimage.jpg', 'mariage de moogho naaba\r\n', '2020-05-16', '2020-05-14');
 
 --
 -- Indexes for dumped tables
@@ -89,20 +107,24 @@ ALTER TABLE `evenement`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-ALTER TABLE `evenement`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `administrateur`
 --
 ALTER TABLE `administrateur`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `commentaire`
 --
 ALTER TABLE `commentaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `evenement`
+--
+ALTER TABLE `evenement`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

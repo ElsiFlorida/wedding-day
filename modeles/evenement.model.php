@@ -1,6 +1,5 @@
 <?php
-include('Db.model.php');
-class evenement{
+class Evenement{
     private $id="";
     private $nom="";
     private $photo="";
@@ -8,9 +7,9 @@ class evenement{
     private $dateDebut="";
     private $dateFin="";
 
-    function __construct(){
+    function __construct($db){
         $this->base=$db;
-   
+    }
     function enregistrer($nom,$photo,$description,$dateDebut,$dateFin) 
     {
     $event =$this->base-> prepare('INSERT INTO evenement
@@ -47,16 +46,11 @@ $event->execute(array(
 
 function lister()
 {
-$event=$this->base->prepare('SELECT * FROM evenement');
-$event->execute(array(
-    "nom"=>$nom,  
-    "photo"=>$photo,
-    "description"=>$description,
-    "dateDebut"=>$dateDebut,
-    "dateFin"=>$dateFin
-));
-return $event->fetchAll();
+$event=$this->base->query('SELECT * FROM evenement');
+$ev=$event->fetchAll();
+return $ev;
 }
+
 function detail($id)
 {
 $event=$this->base->prepare('SELECT * FROM evenement WHERE id= :id');
@@ -65,6 +59,5 @@ $event->execute(array(
 ));
 return $event->fetch();
 }
-
+}
 ?>
-
