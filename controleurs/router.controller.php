@@ -25,7 +25,7 @@ class Router{
         $this->liste=new liste();
         $this->connexion=new login();
         $this->user=new user();
-        //$this->ajoutmod=new ajoutmod();
+        $this->ajoutmod=new ajoutmodifier();
         $this->listAdmin=new listeAdmin();
      }
 
@@ -45,10 +45,6 @@ class Router{
                         $this->single->start();
                     break;
 
-                    case 'new-event':
-                        $this->ajoutmod->start();
-                    break;
-
                     case 'user':
                         $this->user->start();
                     break;
@@ -58,6 +54,10 @@ class Router{
                         break;
                     case 'listeAdmin':
                         $this->listAdmin->start();
+                        break;
+                        
+                    case 'ajoutmodifier':
+                        $this->ajoutmod->start();
                         break;
 
                 default:

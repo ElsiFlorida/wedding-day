@@ -2,6 +2,7 @@
 <html class="h-100">
         <?php include('header.php')?>
     <body class="h-100">
+    <?php include('entete.php')?>
       <div class="container-fluid">
         <section >
             <form action="" method="post" class="row">

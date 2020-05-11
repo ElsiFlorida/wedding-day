@@ -14,12 +14,12 @@
           return $commentaire;
       }
 
-      function register($id,$nom,$prenom,$contenu){
+      function register($id,$nom,$numero,$contenu){
         $inser= $this->base->prepare('INSERT INTO commentaire(eve_id,nom,numero,contenu) VALUES(:eve_id, :nom, :numero, :contenu');
         $inser->execute(array(
           'eve_id'=>$id,
           'nom'=>$nom,
-          'numero'=>$prenom,
+          'numero'=>$numero,
           'contenu'=>$contenu
         ));
       }

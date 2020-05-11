@@ -10,10 +10,12 @@ $db= $base-> connect();
 $this->evenement= new evenement($db);
 }
 function start(){
-    if(isset($_GET['liste'])){
+
+        if (isset($_GET['suppr'])) {
+            $this->evenement->supprimer($_GET['suppr']);
+        }
         $event=$this->evenement->lister();
         include('vues/listeAdmin.vue.php');
-    }
 }
 }
 ?>

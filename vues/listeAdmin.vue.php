@@ -6,7 +6,7 @@ include('header.php');
 ?>
 <body>
 <?php
-include('../entete.php');
+include('entete.php');
 ?>
 <table>
 <tr class="ligne">
@@ -35,9 +35,9 @@ echo $key['dateDebut'];
 echo $key['dateFin'];
 ?>
 </td>
-<td><a href="<?php echo $key['id'];
+<td><a href="?page=listeAdmin&suppr=<?php echo $key['id'];
 ?>">Supprimer</a>
-<a href="<?php echo $key['id'];
+<a href="page=listeAdmin&?update=<?php echo $key['id'];
 ?>">Modifier</a>
 </td>
 </tr>
