@@ -5,12 +5,10 @@
 include('header.php');
 ?>
 <body>
+<?php
+include('../entete.php');
+?>
 <table>
-<tr class="colonne">
-<td>Gestion des Evenements</td>
-<td>Utilisateur</td>
-<td>Liste des Evenements</td>
-</tr>
 <tr class="ligne">
 <td>Nom</td>
 <td>Date debut</td>

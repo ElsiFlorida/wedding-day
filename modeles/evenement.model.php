@@ -1,5 +1,5 @@
 <?php
-class evenement{
+class Evenement{
     private $id="";
     private $nom="";
     private $photo="";
