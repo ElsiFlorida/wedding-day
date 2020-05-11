@@ -34,18 +34,19 @@ function creer($username,$Password){
         "usernameN"=>$username,
         "passwordN"=>sha1($Password)
     ));
-    function supprimer($id){
-        $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
-    $supri->execute(array(
-        "id"=>$id
-    ));
-    }
+}
+
+function supprimer($id){
+    $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
+$supri->execute(array(
+    "id"=>$id
+));
 }
 
 function liste(){
     $ls=$this->base->query("SELECT * FROM administrateur");
    return $ls->fetchAll();
    }
-   
+
 }
 ?>
