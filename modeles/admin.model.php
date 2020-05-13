@@ -22,9 +22,10 @@ function isAdmin($username,$Password){
     }
 }
 function modifPass($newpass,$id){
+    echo 'newpass='.$newpass.' id='.$id;
     $modif=$this->base->prepare("UPDATE administrateur SET password=:newpass WHERE id=:id");
     $modif->execute(array(
-        "newpass"=>sha1($newPass),
+        "newpass"=>sha1($newpass),
         "id"=>$id
     ));
 }

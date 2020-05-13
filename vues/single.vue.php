@@ -33,7 +33,7 @@
         </form>
         </section>
         
-        <section>
+        <section class="mb-5">
         <h2 class="comment">Commentaires</h2>
             <?php
             foreach ($commentaire as $comment) {
