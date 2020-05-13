@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html>
 <?php
-include('header.php');
+include('vues/header.php');
 ?>
 <body>
 <?php
-include('entete.php');
+include('vues/entete.php');
 ?>
 <table class="table table-bordered table-striped">
 <tr class="ligne">

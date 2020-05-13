@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="h-100">
-        <?php include('header.php')?>
+        <?php include('vues/header.php')?>
     <body class="h-100">
-    <?php include('entete.php')?>
+    <?php include('vues/entete.php')?>
       <div class="container-fluid">
         <section style="border-bottom:3px solid black">
         <h1>Changer de mot de passe</h1>

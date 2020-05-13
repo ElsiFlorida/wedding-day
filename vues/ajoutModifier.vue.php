@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <?php
-include('header.php');
+include('vues/header.php');
 ?>
 <body>
-    <?php include('entete.php'); ?>
+    <?php include('vues/entete.php'); ?>
 <div class="container">
 <div class="w-25 form1">
 <form action="" method="post" enctype="multipart/form-data">
