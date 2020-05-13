@@ -1,4 +1,5 @@
 <?php
+ session_start();
 require('modeles/Db.model.php');
 function loadcontroller($class){
     if(file_exists('controleurs/'.$class.'.controller.php')){

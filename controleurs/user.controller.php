@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 class user{
     private $admin;
     private $evenement;
@@ -21,8 +21,7 @@ class user{
                 $this->admin->supprimer($_GET['suppr']);
                 header("location:index.php?page=user");
             }
-
-            if(isset($_POST['new_pass']) AND isset($_POST['old_pass'])) {
+            if(isset($_POST['new_pass'])) {
                 $this->admin->modifPass($_POST['new_pass'],$_SESSION["id"]);
                 header("location:index.php?page=user");
             }

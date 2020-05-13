@@ -15,12 +15,15 @@
       }
 
       function register($id,$nom,$numero,$contenu){
-        $inser= $this->base->prepare('INSERT INTO commentaire(eve_id,nom,numero,contenu) VALUES(:eve_id, :nom, :numero, :contenu');
+        echo $id.'--'.$nom.'--'.$numero.'--'.$contenu;
+        echo date('d/m/Y à H:i:s');
+        $inser= $this->base->prepare('INSERT INTO commentaire(eve_id,nom,numero,contenu,datePub ) VALUES(:eve_id, :nom, :numero, :contenu,:datePub)');
         $inser->execute(array(
           'eve_id'=>$id,
           'nom'=>$nom,
           'numero'=>$numero,
-          'contenu'=>$contenu
+          'contenu'=>$contenu,
+          'datePub'=>date('d/m/Y à H:i:s')
         ));
       }
   }

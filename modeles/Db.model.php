@@ -9,7 +9,4 @@
          return $this->bd;
      }
  }
-
- $base=new Db();
- $db=$base->connect();
 ?>

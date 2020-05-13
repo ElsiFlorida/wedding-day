@@ -8,9 +8,10 @@ include('header.php');
 <?php
 include('entete.php');
 ?>
-<table>
+<table class="table table-bordered table-striped">
 <tr class="ligne">
 <td>Nom</td>
+<td>Description</td>
 <td>Date debut</td>
 <td>Date fin</td>
 <td>Option</td>
@@ -25,19 +26,29 @@ foreach ($event as $key) {
 echo $key['nom'];
 ?>
 </td>
+
+<td>
+<?php
+echo $key['description'];
+?>
+</td>
+
 <td>
 <?php
 echo $key['dateDebut'];
 ?>
 </td>
+
 <td>
 <?php
 echo $key['dateFin'];
 ?>
 </td>
-<td><a href="?page=listeAdmin&suppr=<?php echo $key['id'];
+
+<td>
+<a class="btn btn-danger" href="?page=listeAdmin&suppr=<?php echo $key['id'];
 ?>">Supprimer</a>
-<a href="page=listeAdmin&?update=<?php echo $key['id'];
+<a class="btn btn-success" href="?page=ajoutmodifier&update=<?php echo $key['id'];
 ?>">Modifier</a>
 </td>
 </tr>
