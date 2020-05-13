@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 
+=======
+.contenue{
+    background-image: url('../image/wedding.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+>>>>>>> ca2bf0e5bc16e906a284168929e42dcb3988d151
 /*vue accueil*/
 .contenue{
-    background-image: url('../images/wedding.jpg');
+    background-image: url('../image/wedding.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
