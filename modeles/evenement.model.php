@@ -1,13 +1,21 @@
 <?php
+<<<<<<< HEAD
 //require('Db.model.php');
 class evenement{
+=======
+class Evenement{
+>>>>>>> test
     private $id="";
     private $nom="";
     private $photo="";
     private $description="";
     private $dateDebut="";
     private $dateFin="";
+<<<<<<< HEAD
     private $base;
+=======
+
+>>>>>>> test
     function __construct($db){
         $this->base=$db;
     }
@@ -47,15 +55,9 @@ $event->execute(array(
 
 function lister()
 {
-$event=$this->base->prepare('SELECT * FROM evenement');
-$event->execute(array(
-    "nom"=>$nom,  
-    "photo"=>$photo,
-    "description"=>$description,
-    "dateDebut"=>$dateDebut,
-    "dateFin"=>$dateFin
-));
-return $event->fetchAll();
+$event=$this->base->query('SELECT * FROM evenement');
+$ev=$event->fetchAll();
+return $ev;
 }
 
 function detail($id)
@@ -66,6 +68,9 @@ $event->execute(array(
 ));
 return $event->fetch();
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> test
 }
 ?>

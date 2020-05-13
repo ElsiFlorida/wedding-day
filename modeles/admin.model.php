@@ -1,19 +1,24 @@
 <?php
+<<<<<<< HEAD:modeles/admin.modele.php
+=======
+
+
+>>>>>>> test:modeles/admin.model.php
 class Admin{
     private $base;
    function __construct($db){
     $this->base=$db;
 }
 function isAdmin($username,$Password){
-    $verif=$this->base->prepare("SELECT * FROM administrateur WHERE identifiant=:idt AND mot_de_passe=:pass");
+    $verif=$this->base->prepare("SELECT * FROM administrateur WHERE username=:idt AND password=:pass");
     $verif->execute(array(
         "idt"=>$username,
         "pass"=>sha1($Password),
     ));
     $admi=$verif->fetch();
+    print_r($admi);
     if(count($admi)!=0){
         return $admi;
-
     }
     else{ 
         return false;
@@ -21,9 +26,10 @@ function isAdmin($username,$Password){
 }
 
 function modifPass($newpass,$id){
-    $modif=$this->base->prepare("UPDATE administrateur SET mot_de_passe=:newpass WHERE identifiant=:id");
+    echo 'newpass='.$newpass.' id='.$id;
+    $modif=$this->base->prepare("UPDATE administrateur SET password=:newpass WHERE id=:id");
     $modif->execute(array(
-        "newpass"=>sha1($newPass),
+        "newpass"=>sha1($newpass),
         "id"=>$id
     ));
 }
@@ -36,6 +42,7 @@ function creer($username,$Password){
     ));
 }
 
+<<<<<<< HEAD:modeles/admin.modele.php
     function supprimer($id){
         $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
     $supri->execute(array(
@@ -48,6 +55,19 @@ function creer($username,$Password){
     return $ls->fetchAll();
     }
 
+=======
+function supprimer($id){
+    $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
+$supri->execute(array(
+    "id"=>$id
+));
+}
+
+function liste(){
+    $ls=$this->base->query("SELECT * FROM administrateur");
+   return $ls->fetchAll();
+   }
+>>>>>>> test:modeles/admin.model.php
 
 }
 
