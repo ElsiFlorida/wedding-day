@@ -4,17 +4,6 @@
     <body class="h-100">
     <?php include('entete.php')?>
       <div class="container-fluid">
-<<<<<<< HEAD
-        <section >
-            <form action="" method="post" class="row">
-                <input type="text" name="new_pass" class="flex-grow-1 m-3">
-                <input type="text" name="old_pass" class="flex-grow-1 m-3">
-                <input type="submit" value="changer" class="flex-grow-1 m-3">
-            </form>
-        </section>
-        <div class="row">
-           <section class="col-md-4">
-=======
         <section style="border-bottom:3px solid black">
         <h1>Changer de mot de passe</h1>
             <form action="" method="post" class="row">
@@ -25,7 +14,6 @@
         <div class="row">
            <section class="col-md-4" style="border-right:3px solid black">
            <h1>Ajouter un Admin</h1>
->>>>>>> test
            <form action="" method="post" class="form whell">
                 <input type="text" name="username" class=" form-control m-1">
                 <input type="submit" class=" form-control m-1">

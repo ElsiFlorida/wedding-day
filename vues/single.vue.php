@@ -45,11 +45,7 @@
                 <div class="comment-block p-2 mt-3">
                     <h6><b>Le <?php echo $comment['datePub'] ?> par <?php echo $comment['nom']; ?></b></h6>
                     <p><?php echo  $comment['contenu'] ?></p>
-<<<<<<< HEAD
-                <div>
-=======
             </div>
->>>>>>> test
             <?php
             }
             ?>

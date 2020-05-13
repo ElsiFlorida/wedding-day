@@ -1,21 +1,11 @@
 <?php
-<<<<<<< HEAD
-//require('Db.model.php');
-class evenement{
-=======
 class Evenement{
->>>>>>> test
     private $id="";
     private $nom="";
     private $photo="";
     private $description="";
     private $dateDebut="";
     private $dateFin="";
-<<<<<<< HEAD
-    private $base;
-=======
-
->>>>>>> test
     function __construct($db){
         $this->base=$db;
     }
@@ -68,9 +58,5 @@ $event->execute(array(
 ));
 return $event->fetch();
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> test
 }
 ?>

@@ -1,9 +1,6 @@
 <?php
-<<<<<<< HEAD:modeles/admin.modele.php
-=======
 
 
->>>>>>> test:modeles/admin.model.php
 class Admin{
     private $base;
    function __construct($db){
@@ -42,20 +39,6 @@ function creer($username,$Password){
     ));
 }
 
-<<<<<<< HEAD:modeles/admin.modele.php
-    function supprimer($id){
-        $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
-    $supri->execute(array(
-        "id"=>$id
-    ));
-    }
-
-    function liste(){
-     $ls=$this->base->query("SELECT * FROM administrateur");
-    return $ls->fetchAll();
-    }
-
-=======
 function supprimer($id){
     $supri=$this->base->prepare("DELETE FROM administrateur WHERE id=:id");
 $supri->execute(array(
@@ -67,7 +50,6 @@ function liste(){
     $ls=$this->base->query("SELECT * FROM administrateur");
    return $ls->fetchAll();
    }
->>>>>>> test:modeles/admin.model.php
 
 }
 
